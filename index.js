@@ -1,0 +1,3 @@
+const header=document.getElementById("header");const burgerMenu=document.getElementById("burger__menu");const overlay=document.getElementById("overlay");function toggleMenu(){header.classList.toggle("active");burgerMenu.classList.toggle("active");overlay.classList.toggle("active")}
+let currentIndex=0;const slides=document.querySelectorAll(".slide");function showSlide(index){const totalSlides=slides.length;if(index>=totalSlides){currentIndex=0}else if(index<0){currentIndex=totalSlides-1}else{currentIndex=index}
+const offset=-currentIndex*100;slides.forEach((slide)=>{slide.style.transform=`translateX(${offset}%)`})}

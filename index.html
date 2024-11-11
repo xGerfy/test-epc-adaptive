@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="header" id="header">
+      <div class="logo">Epc Hunters</div>
+      <div class="header__content">
+        <nav class="nav">
+          <a href="">Loren Ipsum</a>
+          <a href="">Loren Ipsum</a>
+          <a href="">Loren Ipsum</a>
+        </nav>
+        <div class="header__search">
+          <a href="">Loren Ipsum</a>
+          <div class="header__search-arrow"></div>
+        </div>
+      </div>
+      <div class="burger__menu" id="burger__menu">
+        <p>Loren Ipsum</p>
+        <div class="burger__btn" onclick="toggleMenu()">
+          <span></span>
+        </div>
+      </div>
+    </header>
+    <main class="main">
+      <h1>Loren Ipsum</h1>
+      <div class="slider">
+        <div class="slide">
+          <div class="card">
+            <p>1</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+          </div>
+        </div>
+        <div class="slide">
+          <div class="card">
+            <p>2</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+          </div>
+        </div>
+        <div class="slide">
+          <div class="card">
+            <p>3</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+          </div>
+        </div>
+        <div class="slide">
+          <div class="card">
+            <p>4</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+          </div>
+        </div>
+        <div class="slide">
+          <div class="card">
+            <p>5</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+          </div>
+        </div>
+        <div class="slide">
+          <div class="card">
+            <p>6</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+          </div>
+        </div>
+      </div>
+      <div class="slider__btns">
+        <button class="prev" onclick="showSlide(currentIndex - 1)">
+          loren ipsum
+        </button>
+        <button class="next" onclick="showSlide(currentIndex + 1)">
+          loren ipsum
+        </button>
+      </div>
+    </main>
+    <div class="overlay" id="overlay" onclick="toggleMenu()"></div>
+
+    <script src="index.js"></script>
+  </body>
+</html>
